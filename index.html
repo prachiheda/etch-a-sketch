@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16x16 Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "red-body">
+        <div class="container" id="grid-container"></div>
+        <div class = "bottom-bar">
+            <div class = "circle">
+                <input type="color" id="colorPicker">
+            </div>
+            <p>Etch-A-Sketch</p>
+            <div class = "circle">
+                <button id="clearButton">Clear</button>
+            </div>
+        </div>
+        <div class = "grid">
+            <label for="gridSize">Grid Size (up to 100x100):</label>
+            <input type="number" id="gridSize" min="1" max="100">
+            <button id="createGridBtn">Create Grid</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

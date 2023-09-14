@@ -1,0 +1,98 @@
+:root {
+    --grid-columns: 16; /* Default value */
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    max-width: 800px; /* Adjust the width as needed */
+    padding: 10px; /* Add some padding */
+    justify-items: center;
+    align-items: center;
+    
+
+}
+
+.square {
+    --square-size: 25px;
+    width: var(--square-size); /* Use the square size defined by the variable */
+    height: var(--square-size); /* Use the square size defined by the variable */
+    background-color: white;
+    border: 0.5px solid black;
+}
+
+.red-body{
+    background-color: red;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    border-radius: 40px;
+    
+}
+
+.bottom-bar {
+    width: 150%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    width: 100px; /* Set the width and height to be equal */
+    height: 100px; /* Set the width and height to be equal */
+    border-radius: 50%;
+    background-color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: cursive;
+    font-size: 30px; 
+    font-weight: bold;
+    color: white; 
+}
+
+.bottom-bar button {
+    border: none; /* Remove borders */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    background: none; /* Remove background */
+    color: inherit; /* Inherit text color from parent */
+    font: inherit; /* Inherit font styles from parent */
+    cursor: pointer; /* Add pointer cursor */
+    outline: none; /* Remove outline on focus (optional) */
+}
+
+.bottom-bar input {
+    border: none; /* Remove borders */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    background: none; /* Remove background */
+    color: inherit; /* Inherit text color from parent */
+    font: inherit; /* Inherit font styles from parent */
+    cursor: pointer; /* Add pointer cursor */
+    outline: none; /* Remove outline on focus (optional) */
+}
+
+.grid {
+    color: white
+}
