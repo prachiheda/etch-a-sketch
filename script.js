@@ -3,7 +3,7 @@ const gridSizeInput = document.getElementById('gridSize');
 const createGridBtn = document.getElementById('createGridBtn');
 const clearButton = document.getElementById('clearButton');
 const colorPicker = document.getElementById('colorPicker');
-var color = 'blue'; 
+var color = 'black'; 
 
 function createGrid(rows, columns) {
     container.innerHTML = '';
